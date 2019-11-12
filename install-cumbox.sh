@@ -21,7 +21,7 @@ case $response in
         sudo udevadm control --reload;;
 
     1)  sudo apt install python 
-        python pip install -r /op/cumbox/requirements.txt
+        python pip install -r requirements.txt
         sudo mv python/cumbox.py /opt/cumbox
         sudo mv python/cumbox.service /lib/systemd/system
         echo "================================================="
